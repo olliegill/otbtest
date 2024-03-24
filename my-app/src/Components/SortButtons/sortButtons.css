@@ -1,0 +1,9 @@
+.sortButtons {
+    & button {
+        border-bottom: solid 1px var(--primary-dark-blue);;
+    }
+
+    & button:last-child {
+        border-bottom: none;
+    }
+}

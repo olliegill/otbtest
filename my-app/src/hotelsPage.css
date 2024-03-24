@@ -1,0 +1,23 @@
+.hotelsPage {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.hotelsPage__layout {
+    display: flex;
+    flex-direction: row;
+    align-content: stretch;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 40px;
+    width: '100%'
+}
+
+.hotelsPage__layout--left {
+    width: 250px;
+}
+
+.hotelsPage__layout--right {
+    flex: 1;
+}

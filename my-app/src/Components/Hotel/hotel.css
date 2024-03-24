@@ -1,0 +1,92 @@
+.hotel {
+    background-color: white;
+    margin-bottom: 20px;
+    position: relative;
+    height: 270px;
+    transition: all 0.3s;
+    z-index: 0;
+}
+
+.hotel--overView--open {
+    height: 400px;
+}
+
+.hotel__mainOuter {
+    display: grid;
+    grid-template-columns: 6fr 5fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 270px;
+    width: '100%';
+    z-index: 50;
+}
+
+.hotel__imageOuter {
+    background-color: azure;
+    position: relative;
+}
+
+.hotel__image {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.hotel__info {
+    padding: 20px;
+    background-color: #FFFFFF;
+}
+
+.hotel__name {
+    font-size: 18px;
+    color: var(--primary-dark-blue);;
+    margin-bottom: 5px;
+}
+
+.hotel__location {
+    font-size: 14px;
+    color: #8a8a8a;
+    margin-bottom: 5px;
+}
+
+.hotel__rating {
+    margin: 10px 0;
+}
+
+.hotel__guests {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.hotel__departInfo {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.hotel__bookButton {
+    margin-top: 15px;
+}
+
+.hotel__readMore--outer {
+    position: absolute;
+    bottom: -1px;
+}
+
+.hotel__overview {
+    padding: 20px;
+    z-index: -1;
+    transform: translateY(-130px);
+    position: relative;
+    transition: all 0.3s;
+}
+
+.hotel__overview--open {
+    transform: translateY(0px);
+}
+
+.hotel__overviewText {
+    color: var(--primary-dark-blue);;
+    font-weight: bold;
+    margin-bottom: 10px;
+}

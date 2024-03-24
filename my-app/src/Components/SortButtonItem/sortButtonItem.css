@@ -1,0 +1,26 @@
+.sortButtonItem {
+    background-color: white;
+    color: var(--primary-dark-blue);;
+    width: 250px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px;
+    border: none;
+    transition: all 0.3s;
+}
+
+.sortButtonItem__isActive {
+    background-color: var(--primary-dark-blue);;
+    color: white;
+}
+
+.sortButtonItem__text {
+
+}
+
+.sortButtonItem__icon {
+    width: 24px;
+    height: 24px;
+}

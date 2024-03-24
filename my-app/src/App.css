@@ -1,0 +1,27 @@
+:root {
+  --primary-yellow: #fedc07;
+  --primary-dark-blue: #17317f;
+}
+
+.App {
+  width: '100%';
+  min-height: 100vh;
+  background-image: url('./assets/background.png');
+}
+
+button {
+  cursor: pointer;
+}
+
+p {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
