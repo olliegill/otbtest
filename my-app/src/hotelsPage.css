@@ -2,6 +2,10 @@
     max-width: 1240px;
     margin: 0 auto;
     padding: 40px;
+    
+    @media (max-width: 664px) {
+        padding: 20px;
+    }
 }
 
 .hotelsPage__layout {
@@ -11,11 +15,20 @@
     justify-content: flex-start;
     align-items: flex-start;
     gap: 40px;
-    width: '100%'
+    width: '100%';
+
+    @media (max-width: 970px) {
+        display: block;
+    }
 }
 
 .hotelsPage__layout--left {
     width: 250px;
+
+    @media (max-width: 970px) {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
 
 .hotelsPage__layout--right {

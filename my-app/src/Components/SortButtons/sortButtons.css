@@ -1,9 +1,25 @@
 .sortButtons {
+    @media (max-width: 970px) {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
     & button {
-        border-bottom: solid 1px var(--primary-dark-blue);;
+        border-bottom: solid 1px var(--primary-dark-blue);
+
+        @media (max-width: 970px) {
+           flex: 1 1 auto;
+           border-right: solid 1px var(--primary-dark-blue);
+        }
     }
 
     & button:last-child {
         border-bottom: none;
+
+        @media (max-width: 970px) {
+            border-bottom: solid 1px var(--primary-dark-blue);
+            border-right: none;
+         }
     }
 }

@@ -60,9 +60,7 @@ export default function Hotel({
             <div className='hotel__mainOuter'>
                 <div className='hotel__imageOuter'>
                     <img className='hotel__image' src={require(`../../assets/${image}.png`)} alt={image} />
-                    <div className='hotel__readMore--outer'>
-                        <ReadMoreButton onClick={handleToggleOverview} toggle={toggleOverview} />
-                    </div>
+                    
                 </div>
                 <div className='hotel__info'>
                     <h5 className='hotel__name'>{name}</h5>
@@ -86,11 +84,17 @@ export default function Hotel({
                     </div>
                     
                 </div>
+                <div className='hotel__readMore--outer'>
+                    <ReadMoreButton onClick={handleToggleOverview} toggle={toggleOverview} />
+                </div>
             </div>
-            <div className={overviewClass}>
+            {toggleOverview && (
+                <div className={overviewClass}>
                 <p className='hotel__overviewText'>Overview</p>
                 {overview}
             </div>
+            )}
+            
         </div>
     );
 }

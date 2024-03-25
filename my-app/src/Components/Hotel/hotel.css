@@ -5,10 +5,18 @@
     height: 270px;
     transition: all 0.3s;
     z-index: 0;
+
+    @media (max-width: 664px) {
+        height: auto;
+    }
 }
 
 .hotel--overView--open {
     height: 400px;
+
+    @media (max-width: 664px) {
+        height: auto;
+    }
 }
 
 .hotel__mainOuter {
@@ -20,10 +28,16 @@
     height: 270px;
     width: '100%';
     z-index: 50;
+    position: relative;
+
+    @media (max-width: 664px) {
+        display: block;
+        height: auto;
+        padding-bottom: 30px;
+    }
 }
 
 .hotel__imageOuter {
-    background-color: azure;
     position: relative;
 }
 
@@ -71,6 +85,11 @@
 .hotel__readMore--outer {
     position: absolute;
     bottom: -1px;
+
+    @media (max-width: 664px) {
+        bottom: 0;
+        left: 10px;
+    }
 }
 
 .hotel__overview {
